@@ -247,7 +247,7 @@ h2 {
 }
 
 .toon-detail p:not(.section-kicker),
-.essay p {
+.essay-copy p {
   margin: 18px 0 0;
   color: #394150;
   font-size: 18px;
@@ -503,11 +503,36 @@ h2 {
 }
 
 .essay {
+  display: grid;
+  grid-template-columns: minmax(260px, 360px) minmax(0, 1fr);
+  gap: 34px;
+  align-items: start;
   margin-bottom: 56px;
   padding: 48px;
   border-radius: 8px;
   background: var(--paper);
   border-top: 6px solid var(--green);
+}
+
+.essay-photo {
+  position: sticky;
+  top: 84px;
+  margin: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #121212;
+  aspect-ratio: 3 / 4;
+}
+
+.essay-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.essay-copy p {
+  line-height: 1.78;
 }
 
 .footer {
@@ -579,7 +604,13 @@ h2 {
   }
 
   .essay {
+    grid-template-columns: 1fr;
     padding: 30px 22px;
+  }
+
+  .essay-photo {
+    position: static;
+    max-height: 540px;
   }
 }
 
