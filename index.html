@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>민시완 - Backend Developer Webtoon CV</title>
+    <meta
+      name="description"
+      content="Java/Spring 기반 백엔드 개발자 민시완의 경력기술서를 웹툰 회차 형식으로 정리한 포트폴리오입니다."
+    >
+    <meta property="og:title" content="민시완 - Backend Developer Webtoon CV">
+    <meta property="og:description" content="운영 안정성과 확장성을 설계하는 백엔드 개발자">
+    <meta property="og:image" content="assets/cover.png">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="홈으로 이동">
+        <span class="brand-mark">W</span>
+        <span>WEBTOON CV</span>
+      </a>
+      <nav class="topnav" aria-label="주요 섹션">
+        <a href="#episodes">회차</a>
+        <a href="#career">시즌</a>
+        <a href="#essay">작가의 말</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-media">
+          <img src="assets/cover.png" alt="백엔드 개발자 포트폴리오 커버 일러스트">
+        </div>
+        <div class="hero-copy">
+          <p class="label">금융 플랫폼 서버 개발 · 운영 안정성 · 성능 개선</p>
+          <h1 id="hero-title">민시완</h1>
+          <p class="subtitle">Backend Application Developer</p>
+          <p class="summary">
+            Java/Spring 기반으로 MSA 금융 서비스 API를 설계하고 운영합니다.
+            데이터 정합성, 보안, 성능, 장애 재발 방지를 함께 보는 서버 개발자입니다.
+          </p>
+          <div class="hero-actions" aria-label="프로필 링크">
+            <a class="primary-action" href="https://github.com/Siwan-min" target="_blank" rel="noreferrer">GitHub 보기</a>
+            <a class="secondary-action" href="#episodes">첫 회 보기</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="profile-strip" aria-label="요약 정보">
+        <article>
+          <span>총 경력</span>
+          <strong>5년 11개월</strong>
+        </article>
+        <article>
+          <span>희망 직무</span>
+          <strong>서버 개발자</strong>
+        </article>
+        <article>
+          <span>현재 소속</span>
+          <strong>아시아나IDT</strong>
+        </article>
+        <article>
+          <span>자격</span>
+          <strong>정보처리기사</strong>
+        </article>
+      </section>
+
+      <section class="toon-detail" aria-label="작품 정보">
+        <div>
+          <p class="section-kicker">작품 정보</p>
+          <h2>운영 환경에 강한 백엔드 개발자</h2>
+          <p>
+            삼성카드 통합금융플랫폼 모니모에서 공공마이데이터, 부동산, 신용관리,
+            제휴 서비스를 운영하며 API 설계, 트랜잭션 처리, Redis 캐시 구조,
+            대외 제휴 연동을 담당했습니다.
+          </p>
+        </div>
+        <dl class="score-board">
+          <div>
+            <dt>관심</dt>
+            <dd>운영 안정성</dd>
+          </div>
+          <div>
+            <dt>장르</dt>
+            <dd>Backend · Fintech</dd>
+          </div>
+          <div>
+            <dt>평점</dt>
+            <dd>성능 개선형</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="ability-band" aria-labelledby="ability-title">
+        <p class="section-kicker">핵심 역량</p>
+        <h2 id="ability-title">대표 기술 컷</h2>
+        <div class="ability-grid">
+          <article><strong>MSA API</strong><span>금융 서비스 REST API 설계 및 운영</span></article>
+          <article><strong>Batch</strong><span>대용량 처리 구조 개선과 DB 부하 완화</span></article>
+          <article><strong>Redis</strong><span>캐시 아키텍처 설계로 트래픽 분산</span></article>
+          <article><strong>제휴 연동</strong><span>토스, 에버랜드, FLO, 혜택알리미 API</span></article>
+          <article><strong>장애 분석</strong><span>원인 추적과 재발 방지 구조 개선</span></article>
+          <article><strong>Git 전략</strong><span>저장소 통합과 브랜치 전략 재수립</span></article>
+        </div>
+      </section>
+
+      <section id="episodes" class="episodes" aria-labelledby="episodes-title">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">회차 목록</p>
+            <h2 id="episodes-title">경력 에피소드</h2>
+          </div>
+          <button class="sort-button" type="button" aria-pressed="false">최신순</button>
+        </div>
+
+        <div class="episode-layout">
+          <ol class="episode-list"></ol>
+          <article class="episode-reader" aria-live="polite">
+            <p class="empty-reader">회차를 선택하면 상세 내용이 열립니다.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="career" class="career" aria-labelledby="career-title">
+        <p class="section-kicker">시즌 정보</p>
+        <h2 id="career-title">커리어 시즌</h2>
+        <div class="timeline">
+          <article>
+            <time>2022.08 - 현재</time>
+            <h3>아시아나IDT · 삼성카드 모니모</h3>
+            <p>금융 플랫폼 서버 개발 및 운영, 공공마이데이터/부동산/신용관리/제휴 운영 리더</p>
+          </article>
+          <article>
+            <time>2021.06 - 2022.07</time>
+            <h3>케이씨텍</h3>
+            <p>반도체 장비 제어 SW 개발, 자원 순환 공급 시스템과 PID 제어 기반 온도 제어 구현</p>
+          </article>
+          <article>
+            <time>2020.09 - 2021.06</time>
+            <h3>인라이플</h3>
+            <p>광고 플랫폼 백엔드 개발, 외부 제휴 API 연동과 Spring Batch 과금 통계 배치 개발</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="stack" aria-labelledby="stack-title">
+        <p class="section-kicker">기술 스택</p>
+        <h2 id="stack-title">작품 태그</h2>
+        <div class="tag-cloud">
+          <span>Java 21</span><span>Spring Boot</span><span>MyBatis</span><span>Oracle 23</span>
+          <span>MariaDB</span><span>Redis</span><span>Kafka</span><span>Vue.js</span>
+          <span>JavaScript</span><span>Jira</span><span>Confluence</span><span>Bitbucket</span>
+        </div>
+      </section>
+
+      <section id="essay" class="essay" aria-labelledby="essay-title">
+        <p class="section-kicker">작가의 말</p>
+        <h2 id="essay-title">문제의 원인을 구조에서 찾습니다</h2>
+        <p>
+          기능 구현 자체보다 실제 운영 환경에서 얼마나 안정적으로 동작하는지,
+          장애가 발생했을 때 어떤 영향이 생기는지를 함께 고민해왔습니다.
+          DB 부하, 응답 지연, 대외 제휴 보안 구조처럼 서비스 전체 흐름에 영향을 주는
+          문제를 끝까지 분석하고 같은 문제가 반복되지 않도록 개선하는 개발을 지향합니다.
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>© 2026 Siwan Min</span>
+      <a href="https://github.com/Siwan-min" target="_blank" rel="noreferrer">github.com/Siwan-min</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
