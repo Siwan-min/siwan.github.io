@@ -74,8 +74,32 @@ const episodes = [
 const episodeList = document.querySelector(".episode-list");
 const reader = document.querySelector(".episode-reader");
 const sortButton = document.querySelector(".sort-button");
+const careerDuration = document.querySelector("#career-duration");
 let latestFirst = true;
 let activeNo = episodes[0].no;
+
+function getCareerDuration(startDate, endDate = new Date()) {
+  let years = endDate.getFullYear() - startDate.getFullYear();
+  let months = endDate.getMonth() - startDate.getMonth();
+
+  if (endDate.getDate() < startDate.getDate()) {
+    months -= 1;
+  }
+
+  if (months < 0) {
+    years -= 1;
+    months += 12;
+  }
+
+  return `${years}년 ${months}개월`;
+}
+
+function renderCareerDuration() {
+  if (!careerDuration) return;
+
+  const startDate = new Date(`${careerDuration.dataset.startDate}T00:00:00`);
+  careerDuration.textContent = getCareerDuration(startDate);
+}
 
 function renderEpisodes() {
   const ordered = latestFirst ? [...episodes] : [...episodes].reverse();
@@ -129,3 +153,4 @@ sortButton.addEventListener("click", () => {
 
 renderEpisodes();
 renderReader(activeNo);
+renderCareerDuration();
