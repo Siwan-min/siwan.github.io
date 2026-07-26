@@ -95,6 +95,9 @@ const episodeList = document.querySelector(".episode-list");
 const reader = document.querySelector(".episode-reader");
 const sortButton = document.querySelector(".sort-button");
 const careerDuration = document.querySelector("#career-duration");
+const recordModal = document.querySelector(".record-modal");
+const openRecordButton = document.querySelector("[data-open-record]");
+const closeRecordButtons = document.querySelectorAll("[data-close-record]");
 let latestFirst = true;
 let activeNo = episodes[0].no;
 
@@ -158,6 +161,22 @@ function renderReader(no) {
   renderEpisodes();
 }
 
+function openRecordModal() {
+  if (!recordModal) return;
+
+  recordModal.hidden = false;
+  document.body.style.overflow = "hidden";
+  recordModal.querySelector(".record-close")?.focus();
+}
+
+function closeRecordModal() {
+  if (!recordModal || recordModal.hidden) return;
+
+  recordModal.hidden = true;
+  document.body.style.overflow = "";
+  openRecordButton?.focus();
+}
+
 episodeList.addEventListener("click", (event) => {
   const card = event.target.closest(".episode-card");
   if (!card) return;
@@ -169,6 +188,18 @@ sortButton.addEventListener("click", () => {
   sortButton.textContent = latestFirst ? "최신순" : "첫화부터";
   sortButton.setAttribute("aria-pressed", String(!latestFirst));
   renderEpisodes();
+});
+
+openRecordButton?.addEventListener("click", openRecordModal);
+
+closeRecordButtons.forEach((button) => {
+  button.addEventListener("click", closeRecordModal);
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    closeRecordModal();
+  }
 });
 
 renderEpisodes();

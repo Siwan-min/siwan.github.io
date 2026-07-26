@@ -20,6 +20,7 @@
         <span>WEBTOON CV</span>
       </a>
       <nav class="topnav" aria-label="주요 섹션">
+        <a href="#growth">성장과정</a>
         <a href="#episodes">회차</a>
         <a href="#career">시즌</a>
         <a href="#essay">작가의 말</a>
@@ -101,6 +102,45 @@
           <article><strong>제휴 연동</strong><span>토스, 에버랜드, FLO, 혜택알리미 API</span></article>
           <article><strong>API 병렬화</strong><span>순차 호출 구조 개선으로 로딩 속도 단축</span></article>
           <article><strong>Git 전략</strong><span>저장소 통합과 브랜치 전략 재수립</span></article>
+        </div>
+      </section>
+
+      <section id="growth" class="growth" aria-labelledby="growth-title">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">프롤로그</p>
+            <h2 id="growth-title">성장과정 스토리</h2>
+          </div>
+          <button class="story-badge" type="button" data-open-record>고교생활기록부</button>
+        </div>
+        <div class="growth-panel">
+          <article>
+            <span class="growth-year">1학년</span>
+            <h3>꾸준함으로 신뢰를 얻다</h3>
+            <p>
+              운동을 꾸준히 이어가며 몸에 밴 성실함과 반듯한 생활 태도는 선생님들로부터 신뢰를 받는
+              기반이 되었습니다. 이 시기의 꾸준함은 지금도 운영 업무에서 작은 이상 징후를 놓치지 않고
+              차분히 확인하는 습관으로 이어지고 있습니다.
+            </p>
+          </article>
+          <article>
+            <span class="growth-year">2학년</span>
+            <h3>목표를 세우고 끝까지 밀어붙이다</h3>
+            <p>
+              주어진 일에 최선을 다하고, 장단기 계획을 세워 목표에 도달하려는 태도가 뚜렷해졌습니다.
+              자기주도학습과 책임감, 타인의 의견을 경청하는 자세는 이후 팀 안에서 문제를 함께 풀어가는
+              개발 방식의 토대가 되었습니다.
+            </p>
+          </article>
+          <article>
+            <span class="growth-year">3학년</span>
+            <h3>책임감과 가능성을 방향으로 바꾸다</h3>
+            <p>
+              목표를 분명히 세우고 꾸준히 노력하며, 맡은 일을 도맡아 책임지는 태도를 보였습니다.
+              깊게 생각하고 자신의 삶에 대한 목표 의식이 분명했던 경험은 지금의 커리어에서도 안정성과
+              확장성을 동시에 고민하는 기준점이 되고 있습니다.
+            </p>
+          </article>
         </div>
       </section>
 
@@ -193,6 +233,22 @@
         </div>
       </section>
     </main>
+
+    <div class="record-modal" role="dialog" aria-modal="true" aria-labelledby="record-modal-title" hidden>
+      <div class="record-backdrop" data-close-record></div>
+      <section class="record-dialog">
+        <header class="record-dialog-head">
+          <div>
+            <p class="section-kicker">원본 기록</p>
+            <h2 id="record-modal-title">고교생활기록부</h2>
+          </div>
+          <button class="record-close" type="button" aria-label="고교생활기록부 닫기" data-close-record>×</button>
+        </header>
+        <div class="record-image-wrap">
+          <img src="assets/school-record.jpg" alt="고교 생활기록부 행동특성 및 종합의견 이미지">
+        </div>
+      </section>
+    </div>
 
     <footer class="footer">
       <span>© 2026 Siwan Min</span>

@@ -184,6 +184,7 @@ main {
 .profile-strip,
 .toon-detail,
 .ability-band,
+.growth,
 .episodes,
 .career,
 .stack,
@@ -226,6 +227,7 @@ main {
 
 .toon-detail,
 .ability-band,
+.growth,
 .career,
 .stack,
 .essay {
@@ -304,6 +306,80 @@ h2 {
   margin-top: 10px;
   color: var(--muted);
   font-weight: 700;
+}
+
+.story-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  padding: 0 12px;
+  border: 0;
+  border-radius: 6px;
+  background: #101820;
+  color: white;
+  font-size: 13px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.story-badge:hover,
+.story-badge:focus-visible {
+  background: var(--green-dark);
+}
+
+.growth-panel {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.growth-panel article {
+  position: relative;
+  min-height: 260px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  overflow: hidden;
+}
+
+.growth-panel article::before {
+  content: "";
+  position: absolute;
+  right: -28px;
+  top: -28px;
+  width: 92px;
+  height: 92px;
+  border-radius: 999px;
+  background: var(--green);
+  opacity: 0.14;
+}
+
+.growth-year {
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 0 10px;
+  border-radius: 6px;
+  background: rgba(0, 220, 100, 0.12);
+  color: var(--green-dark);
+  font-size: 13px;
+  font-weight: 950;
+}
+
+.growth-panel h3 {
+  margin: 18px 0 0;
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.growth-panel p {
+  margin: 14px 0 0;
+  color: #4b5563;
+  font-size: 16px;
+  font-weight: 650;
 }
 
 .episodes {
@@ -535,6 +611,85 @@ h2 {
   line-height: 1.78;
 }
 
+.record-modal[hidden] {
+  display: none;
+}
+
+.record-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.record-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(5, 9, 14, 0.78);
+}
+
+.record-dialog {
+  position: relative;
+  z-index: 1;
+  width: min(980px, 100%);
+  max-height: min(88vh, 900px);
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  overflow: hidden;
+  border-radius: 8px;
+  background: var(--paper);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.36);
+}
+
+.record-dialog-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 22px;
+  border-bottom: 1px solid var(--line);
+}
+
+.record-dialog-head h2 {
+  font-size: 28px;
+}
+
+.record-close {
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  width: 38px;
+  height: 38px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--soft);
+  color: var(--ink);
+  cursor: pointer;
+  font-size: 26px;
+  line-height: 1;
+}
+
+.record-close:hover,
+.record-close:focus-visible {
+  border-color: var(--green);
+}
+
+.record-image-wrap {
+  overflow: auto;
+  padding: 18px;
+  background: #eef1f4;
+}
+
+.record-image-wrap img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  background: white;
+}
+
 .footer {
   display: flex;
   justify-content: space-between;
@@ -581,6 +736,7 @@ h2 {
 
   .profile-strip,
   .ability-grid,
+  .growth-panel,
   .toon-detail,
   .episode-layout {
     grid-template-columns: 1fr;
@@ -611,6 +767,26 @@ h2 {
   .essay-photo {
     position: static;
     max-height: 540px;
+  }
+
+  .record-modal {
+    padding: 12px;
+  }
+
+  .record-dialog {
+    max-height: 88vh;
+  }
+
+  .record-dialog-head {
+    padding: 16px;
+  }
+
+  .record-dialog-head h2 {
+    font-size: 24px;
+  }
+
+  .record-image-wrap {
+    padding: 10px;
   }
 }
 
