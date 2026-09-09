@@ -3,248 +3,380 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>민시완 - Backend Developer Webtoon CV</title>
+    <title>민시완 | Backend Application Developer</title>
     <meta
       name="description"
-      content="Java/Spring 기반 백엔드 개발자 민시완의 경력기술서를 웹툰 회차 형식으로 정리한 포트폴리오입니다."
+      content="운영 환경의 문제를 구조적으로 해결하고 안정적인 서비스를 만드는 백엔드 개발자 민시완의 포트폴리오입니다."
     >
-    <meta property="og:title" content="민시완 - Backend Developer Webtoon CV">
-    <meta property="og:description" content="운영 안정성과 확장성을 설계하는 백엔드 개발자">
-    <meta property="og:image" content="assets/cover.png">
+    <meta property="og:title" content="민시완 | Backend Application Developer">
+    <meta property="og:description" content="Java/Spring 기반 금융 플랫폼 백엔드 개발자">
+    <meta property="og:image" content="assets/cv/cv-page-01-image-01.png">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23070a0f'/%3E%3Cpath d='M17 43V21h7l8 12 8-12h7v22h-7V32L34 43h-4l-6-11v11z' fill='%237cf7c6'/%3E%3C/svg%3E">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <header class="topbar">
-      <a class="brand" href="#top" aria-label="홈으로 이동">
-        <span class="brand-mark">W</span>
-        <span>WEBTOON CV</span>
+    <header class="site-header">
+      <a class="logo" href="#top" aria-label="홈으로 이동">
+        <span>Siwan Min</span>
+        <small>Backend Developer</small>
       </a>
-      <nav class="topnav" aria-label="주요 섹션">
-        <a href="#growth">성장과정</a>
-        <a href="#episodes">회차</a>
-        <a href="#career">시즌</a>
-        <a href="#essay">작가의 말</a>
+      <nav class="nav" aria-label="주요 섹션">
+        <a href="#impact">Impact</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#story">Story</a>
       </nav>
     </header>
 
     <main id="top">
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-media">
-          <img src="assets/cover.png" alt="백엔드 개발자 포트폴리오 커버 일러스트">
-        </div>
-        <div class="hero-copy">
-          <p class="label">금융 플랫폼 서버 개발 · 운영 안정성 · 성능 개선</p>
-          <h1 id="hero-title">민시완</h1>
-          <p class="subtitle">Backend Application Developer</p>
-          <p class="summary">
-            Java/Spring 기반으로 MSA 금융 서비스 API를 설계하고 운영합니다.
-            데이터 정합성, 보안, 운영 안정성, 장애 재발 방지를 함께 보는 서버 개발자입니다.
+      <section class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">Java · Spring Boot · Oracle · Redis · REST API</p>
+          <h1>운영 환경의 문제를 구조적으로 해결하는 백엔드 개발자</h1>
+          <p class="hero-lead">
+            광고 플랫폼, 반도체 장비 제어, 금융 플랫폼을 경험하며 서비스의 전체 생명주기를 다뤄왔습니다.
+            현재는 삼성카드 통합금융플랫폼에서 백엔드 개발과 개발 리딩을 함께 수행하고 있습니다.
           </p>
-          <div class="hero-actions" aria-label="프로필 링크">
-            <a class="primary-action" href="https://github.com/Siwan-min" target="_blank" rel="noreferrer">GitHub 보기</a>
-            <a class="secondary-action" href="#episodes">첫 회 보기</a>
+          <div class="hero-actions">
+            <a class="button primary" href="https://github.com/Siwan-min" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="button ghost" href="#projects">프로젝트 보기</a>
           </div>
         </div>
+        <aside class="hero-card" aria-label="프로필 요약">
+          <img src="assets/cv/cv-page-01-image-01.png" alt="민시완 프로필 사진">
+          <div class="hero-card-info">
+            <span>Backend Application Developer</span>
+            <strong>민시완</strong>
+          </div>
+        </aside>
       </section>
 
-      <section class="profile-strip" aria-label="요약 정보">
+      <section class="metrics" aria-label="핵심 요약">
         <article>
-          <span>총 경력</span>
-          <strong id="career-duration" data-start-date="2020-09-01">5년 11개월</strong>
+          <span>Experience</span>
+          <strong id="career-duration" data-start-date="2020-09-01">6년 1개월</strong>
         </article>
         <article>
-          <span>희망 직무</span>
-          <strong>서버 개발자</strong>
+          <span>Current</span>
+          <strong>Samsung Card Platform</strong>
         </article>
         <article>
-          <span>현재 소속</span>
-          <strong>아시아나IDT</strong>
+          <span>Role</span>
+          <strong>Backend / Server</strong>
         </article>
         <article>
-          <span>자격</span>
-          <strong>정보처리기사</strong>
+          <span>Focus</span>
+          <strong>Stability & Scale</strong>
         </article>
       </section>
 
-      <section class="toon-detail" aria-label="작품 정보">
+      <section class="intro section-grid">
         <div>
-          <p class="section-kicker">작품 정보</p>
-          <h2>운영 환경에 강한 백엔드 개발자</h2>
+          <p class="section-label">Profile</p>
+          <h2>기능 구현을 넘어 운영 리스크까지 설계합니다.</h2>
+        </div>
+        <div class="copy-block">
           <p>
-            삼성카드 통합금융플랫폼 모니모에서 공공마이데이터, 부동산, 신용관리,
-            제휴 서비스를 운영하며 API 설계, 트랜잭션 처리, Redis 캐시 구조,
-            대외 제휴 연동과 성능 개선을 담당했습니다.
+            Java/Spring 기반의 백엔드 개발자로 광고 플랫폼, 반도체 장비 제어 소프트웨어, 금융 플랫폼을
+            경험했습니다. 현재는 삼성카드 통합금융플랫폼에서 공공마이데이터, 부동산, 신용관리, 대외 제휴
+            영역의 개발 및 운영을 담당합니다.
+          </p>
+          <p>
+            요구사항 분석부터 API 설계, 구현, 코드 리뷰, 테스트, 배포와 장애 대응까지 서비스의 전체
+            생명주기를 경험하고 있습니다. 운영 환경에서 발생하는 병목과 장애의 원인을 데이터와 처리 흐름을
+            기준으로 분석하고 구조적으로 개선하는 것을 강점으로 가지고 있습니다.
           </p>
         </div>
-        <dl class="score-board">
-          <div>
-            <dt>관심</dt>
-            <dd>운영 안정성</dd>
-          </div>
-          <div>
-            <dt>장르</dt>
-            <dd>Backend</dd>
-          </div>
-          <div>
-            <dt>평점</dt>
-            <dd>성능 개선형</dd>
-          </div>
-        </dl>
       </section>
 
-      <section class="ability-band" aria-labelledby="ability-title">
-        <p class="section-kicker">핵심 역량</p>
-        <h2 id="ability-title">대표 기술 컷</h2>
-        <div class="ability-grid">
-          <article><strong>MSA API</strong><span>금융 서비스 REST API 설계와 운영</span></article>
-          <article><strong>Batch</strong><span>대량 update 구조 개선과 DB lock 완화</span></article>
-          <article><strong>Redis</strong><span>캐시 아키텍처 설계로 트래픽 분산</span></article>
-          <article><strong>제휴 연동</strong><span>토스, 에버랜드, FLO, 혜택알리미 API</span></article>
-          <article><strong>API 병렬화</strong><span>순차 호출 구조 개선으로 로딩 속도 단축</span></article>
-          <article><strong>Git 전략</strong><span>저장소 통합과 브랜치 전략 재수립</span></article>
+      <section id="impact" class="impact">
+        <div class="section-title">
+          <p class="section-label">Selected Impact</p>
+          <h2>측정 가능한 개선을 만든 경험</h2>
         </div>
-      </section>
-
-      <section id="growth" class="growth" aria-labelledby="growth-title">
-        <div class="section-head">
-          <div>
-            <p class="section-kicker">프롤로그</p>
-            <h2 id="growth-title">성장과정 스토리</h2>
-          </div>
-          <button class="story-badge" type="button" data-open-record>고교생활기록부</button>
-        </div>
-        <div class="growth-panel">
+        <div class="impact-grid">
           <article>
-            <span class="growth-year">1학년</span>
-            <h3>꾸준함으로 신뢰를 얻다</h3>
-            <p>
-              운동을 꾸준히 이어가며 몸에 밴 성실함과 반듯한 생활 태도는 선생님들로부터 신뢰를 받는
-              기반이 되었습니다. 이 시기의 꾸준함은 지금도 운영 업무에서 작은 이상 징후를 놓치지 않고
-              차분히 확인하는 습관으로 이어지고 있습니다.
-            </p>
+            <span>API Latency</span>
+            <strong>4.5초 → 1초대</strong>
+            <p>초기 화면의 독립 API를 분리하고 병렬 호출 구조로 개선했습니다.</p>
           </article>
           <article>
-            <span class="growth-year">2학년</span>
-            <h3>목표를 세우고 끝까지 밀어붙이다</h3>
-            <p>
-              주어진 일에 최선을 다하고, 장단기 계획을 세워 목표에 도달하려는 태도가 뚜렷해졌습니다.
-              자기주도학습과 책임감, 타인의 의견을 경청하는 자세는 이후 팀 안에서 문제를 함께 풀어가는
-              개발 방식의 토대가 되었습니다.
-            </p>
+            <span>DB Stability</span>
+            <strong>DB Lock 해소</strong>
+            <p>대량 UPDATE를 Chunk 단위 처리와 주기적 Commit 구조로 변경했습니다.</p>
           </article>
           <article>
-            <span class="growth-year">3학년</span>
-            <h3>책임감과 가능성을 방향으로 바꾸다</h3>
-            <p>
-              목표를 분명히 세우고 꾸준히 노력하며, 맡은 일을 도맡아 책임지는 태도를 보였습니다.
-              깊게 생각하고 자신의 삶에 대한 목표 의식이 분명했던 경험은 지금의 커리어에서도 안정성과
-              확장성을 동시에 고민하는 기준점이 되고 있습니다.
-            </p>
+            <span>Release Ops</span>
+            <strong>30분 → 5분</strong>
+            <p>Repository 통합과 PR 기반 Branch 전략으로 배포 준비 시간을 줄였습니다.</p>
+          </article>
+          <article>
+            <span>Leadership</span>
+            <strong>6개 영역 인수</strong>
+            <p>차세대 시스템의 소스, 기능, 데이터 흐름을 운영 관점에서 검증했습니다.</p>
           </article>
         </div>
       </section>
 
-      <section id="episodes" class="episodes" aria-labelledby="episodes-title">
-        <div class="section-head">
-          <div>
-            <p class="section-kicker">회차 목록</p>
-            <h2 id="episodes-title">경력 에피소드</h2>
-          </div>
-          <button class="sort-button" type="button" aria-pressed="false">최신순</button>
+      <section class="competencies section-grid">
+        <div>
+          <p class="section-label">Core Competencies</p>
+          <h2>Backend, Data, Operation을 함께 봅니다.</h2>
         </div>
-
-        <div class="episode-layout">
-          <ol class="episode-list"></ol>
-          <article class="episode-reader" aria-live="polite">
-            <p class="empty-reader">회차를 선택하면 상세 내용이 열립니다.</p>
+        <div class="skill-matrix">
+          <article>
+            <h3>Backend & Data</h3>
+            <ul>
+              <li>Java / Spring Boot 기반 REST API 설계·개발</li>
+              <li>Oracle 기반 데이터 처리 및 트랜잭션 설계</li>
+              <li>Redis 기반 캐시 및 임시 데이터 처리 구조</li>
+              <li>Spring Batch 기반 대용량 데이터 처리</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Architecture & Operation</h3>
+            <ul>
+              <li>외부 제휴 API 및 인증 프로세스 설계</li>
+              <li>운영 장애 원인 분석 및 성능 개선</li>
+              <li>Git Repository / Branch 전략 개선</li>
+              <li>설계·코드 리뷰 및 개발 리딩</li>
+            </ul>
           </article>
         </div>
       </section>
 
-      <section id="career" class="career" aria-labelledby="career-title">
-        <p class="section-kicker">시즌 정보</p>
-        <h2 id="career-title">커리어 시즌</h2>
+      <section id="projects" class="projects">
+        <div class="section-title">
+          <p class="section-label">Featured Projects</p>
+          <h2>시스템 구조로 증명한 프로젝트</h2>
+        </div>
+        <div class="project-list">
+          <article class="project-card featured">
+            <div class="project-copy">
+              <span class="period">2026.03 - 2026.04</span>
+              <h3>제휴 서비스 통합 인증 플랫폼 구축 설계</h3>
+              <p>
+                외부 제휴 서비스와 회원, 로그인, 이용정보를 연계하면서 개인정보 노출을 최소화하고
+                향후 제휴 확장에 대응할 수 있는 공통 인증 및 데이터 전달 구조를 설계했습니다.
+              </p>
+              <ul>
+                <li>회원 여부 확인, 로그인 연계, 고객 식별정보 검증을 위한 인증 API 흐름 설계</li>
+                <li>일회성 토큰 기반 검증 API와 Redis 단기 토큰 저장 구조 설계</li>
+                <li>AES-256 암호화, TTL, 재사용 방지, Header 기반 전달 정책 정리</li>
+              </ul>
+            </div>
+            <button class="visual-card" type="button" data-image="assets/cv/cv-page-04-image-01.png" data-title="제휴 서비스 통합 로그인 플랫폼">
+              <img src="assets/cv/cv-page-04-image-01.png" alt="제휴 서비스 통합 로그인 플랫폼 설계도">
+            </button>
+          </article>
+
+          <article class="project-card">
+            <div class="project-copy">
+              <span class="period">2025.08 - 2025.11</span>
+              <h3>차세대 시스템 구축 인수 및 안정화</h3>
+              <p>
+                부동산, 기타자산, 공공마이데이터, 건강, 절세, 포인트머니 6개 업무 영역의 기능과
+                소스코드, 데이터 처리 흐름을 검토하고 운영 리스크를 오픈 전에 보완했습니다.
+                모놀리식 구조에서 MSA 구조로 전환되는 과정에서 서비스 경계와 연계 흐름을 운영 관점으로 검증했습니다.
+              </p>
+              <ul>
+                <li>6개 업무 영역의 기능, 소스코드, 데이터 처리 흐름 및 시스템 연계 구조 검토</li>
+                <li>운영 관점에서 기능 결함과 소스 품질 이슈 도출 및 개선 요청</li>
+                <li>영역별 인수 진행 상황과 기술 이슈 조율, 조치 결과 재검증</li>
+              </ul>
+            </div>
+            <div class="architecture-flow" aria-label="모놀리식 시스템에서 MSA 구조로 전환되는 개념도">
+              <div class="architecture-node monolith">
+                <span>Before</span>
+                <strong>Monolithic System</strong>
+                <small>기능과 데이터 흐름이 하나의 큰 구조에 집중</small>
+              </div>
+              <div class="architecture-arrow" aria-hidden="true">→</div>
+              <div class="service-cluster">
+                <span>After</span>
+                <strong>MSA Services</strong>
+                <div>
+                  <em>부동산</em>
+                  <em>기타자산</em>
+                  <em>공공마이데이터</em>
+                  <em>건강</em>
+                  <em>절세</em>
+                  <em>포인트머니</em>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-copy">
+              <span class="period">2024.06 - 2024.08</span>
+              <h3>Git Repository 통합 및 Branch 전략 재수립</h3>
+              <p>
+                개발·운영 Repository 분리로 발생하던 수동 Copy & Paste 배포, 소스 누락, 버전 불일치
+                위험을 단일 Repository와 PR 기반 Branch 전략으로 개선했습니다.
+              </p>
+            </div>
+            <button class="visual-card" type="button" data-image="assets/cv/cv-page-06-image-01.png" data-title="Repository / Branch Strategy">
+              <img src="assets/cv/cv-page-06-image-01.png" alt="Repository 통합과 Branch 전략 개선 다이어그램">
+            </button>
+          </article>
+
+          <article class="project-card">
+            <div class="project-copy">
+              <span class="period">2023.08 - 2023.11</span>
+              <h3>모니모 마이데이터 서비스 오픈 Front-End 개선</h3>
+              <p>
+                모니모 마이데이터 서비스 오픈 시점에 인수자 측 Front-End 리더 역할을 수행하며,
+                초기 화면의 API 호출 구조와 사용자 체감 성능을 개선했습니다.
+              </p>
+              <ul>
+                <li>사용자 정보, 마이데이터 정보, 이벤트, 배너 등 독립 API 의존성 분리</li>
+                <li>순차 호출 구조를 병렬 호출 구조로 개선하여 초기 화면 지연 완화</li>
+                <li>Front-End 관점에서 데이터 흐름과 화면 로딩 구조 검토 및 안정화</li>
+              </ul>
+            </div>
+            <button class="visual-card" type="button" data-image="assets/cv/cv-page-08-image-01.png" data-title="마이데이터 Front-End 개선 아키텍처">
+              <img src="assets/cv/cv-page-08-image-01.png" alt="마이데이터 Front-End 개선 아키텍처 다이어그램">
+            </button>
+          </article>
+
+          <article class="project-card">
+            <div class="project-copy">
+              <span class="period">운영 성능 개선</span>
+              <h3>DB Lock 및 초기 화면 응답 구조 개선</h3>
+              <p>
+                대량 UPDATE 단일 Commit으로 인한 DB Lock을 Chunk 처리로 줄였고, 초기 화면의 순차 API
+                호출 구조를 병렬화해 응답 속도를 1초대로 단축했습니다.
+              </p>
+            </div>
+            <button class="visual-card" type="button" data-image="assets/cv/cv-page-07-image-01.png" data-title="초기 화면 API 응답 구조 개선">
+              <img src="assets/cv/cv-page-07-image-01.png" alt="초기 화면 API 병렬 호출 개선 다이어그램">
+            </button>
+          </article>
+
+          <article class="project-card">
+            <div class="project-copy">
+              <span class="period">2022.02 - 2022.07 · 케이씨텍</span>
+              <h3>반도체 장비 국산화 프로젝트</h3>
+              <p>
+                화학 재료 재사용 기반 자원 순환 공급 시스템을 개발하며, 복수 저장 장치 간 자원 분배와
+                순환 로직을 설계했습니다. 실시간 제어 환경에서 장비 상태와 예외 상황을 고려한 안정적인
+                제어 구조를 구현했습니다.
+              </p>
+              <ul>
+                <li>Queuing 알고리즘 기반 저장 장치별 자원 분배 및 공급 순서 제어</li>
+                <li>4개 저장 장치 간 화학 재료 흐름 제어 시스템 구현</li>
+                <li>Manual / Automatic Mode 기반 Sequence 제어 구조 개발</li>
+                <li>PID 제어 알고리즘을 적용한 정밀 온도 제어 및 공정 상태 모니터링</li>
+              </ul>
+            </div>
+            <button class="visual-card" type="button" data-image="assets/cv/cv-page-09-image-01.png" data-title="반도체 장비 제어 아키텍처">
+              <img src="assets/cv/cv-page-09-image-01.png" alt="반도체 장비 제어 아키텍처 다이어그램">
+            </button>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="experience">
+        <div class="section-title">
+          <p class="section-label">Experience</p>
+          <h2>도메인을 넓히며 쌓은 백엔드 관점</h2>
+        </div>
         <div class="timeline">
           <article>
-            <time>2022.08.01 - 현재</time>
-            <h3>아시아나IDT · 금융부문/삼성카드 모니모</h3>
-            <p>금융 플랫폼 서버 개발 및 운영, 공공마이데이터/부동산/신용관리/제휴 운영 리더</p>
+            <time>2022.08 - 현재</time>
+            <div>
+              <h3>아시아나IDT · 금융컨설팅팀</h3>
+              <p>삼성카드 통합금융플랫폼 Backend Developer / 개발 리더</p>
+              <ul>
+                <li>공공마이데이터, 부동산, 신용관리, 대외 제휴 영역 개발 및 운영 리딩</li>
+                <li>금융 서비스 API, Oracle 데이터 처리, Redis 캐시, 외부 API 연동 설계</li>
+                <li>로그와 데이터 흐름 기반 장애 분석 및 재발 방지 개선안 도출</li>
+              </ul>
+            </div>
           </article>
           <article>
-            <time>2021.06.15 - 2022.07.31</time>
-            <h3>케이씨텍 · 장비부문/CMP연구소</h3>
-            <p>반도체 장비 제어 SW 개발, 자원 순환 공급 시스템과 PID 제어 기반 온도 제어 구현</p>
+            <time>2021.06 - 2022.07</time>
+            <div>
+              <h3>케이씨텍 · CMP제어팀</h3>
+              <p>반도체 장비 제어 SW Developer</p>
+              <ul>
+                <li>C++ MFC 기반 장비 제어 소프트웨어 개발 및 유지보수</li>
+                <li>RS-232 통신 기반 센서 데이터 수집, 소모품 마모도 측정, 공정 모니터링</li>
+                <li>Queuing 알고리즘과 PID 제어를 활용한 안정적인 제어 로직 운영</li>
+              </ul>
+            </div>
           </article>
           <article>
-            <time>2020.09.01 - 2021.06.11</time>
-            <h3>인라이플 · 인프라개발실/매체플랫폼팀</h3>
-            <p>광고 플랫폼 백엔드 개발, 외부 제휴 API 연동과 Spring Batch 과금 통계 배치 개발</p>
+            <time>2020.09 - 2021.06</time>
+            <div>
+              <h3>인라이플 · 인프라개발실 / 매체플랫폼팀</h3>
+              <p>Backend Developer</p>
+              <ul>
+                <li>Java/Spring 기반 광고 플랫폼 Backend API 개발 및 운영</li>
+                <li>외부 제휴 광고 API 연동, Fallback 광고 노출 처리 구조 개발</li>
+                <li>MariaDB, Redis, EhCache, Spring Batch 기반 광고 정산·통계 데이터 처리</li>
+              </ul>
+            </div>
           </article>
         </div>
       </section>
 
-      <section class="stack" aria-labelledby="stack-title">
-        <p class="section-kicker">기술 스택</p>
-        <h2 id="stack-title">작품 태그</h2>
+      <section class="tech">
+        <p class="section-label">Tech Stack</p>
+        <h2>문제를 해결하는 데 사용해온 도구들</h2>
         <div class="tag-cloud">
-          <span>Java 21</span><span>Spring Boot</span><span>MyBatis</span><span>Oracle 23</span>
-          <span>MariaDB</span><span>Redis</span><span>Kafka</span><span>Vue.js</span>
-          <span>JavaScript</span><span>Jira</span><span>Confluence</span><span>Bitbucket</span>
+          <span>Java</span><span>Spring Boot</span><span>Spring Batch</span><span>MyBatis</span>
+          <span>Oracle</span><span>MariaDB</span><span>Redis</span><span>EhCache</span>
+          <span>Kafka</span><span>REST API</span><span>Git</span><span>Vue.js</span>
+          <span>C++</span><span>MFC</span><span>RS-232</span><span>PID Control</span>
         </div>
       </section>
 
-      <section id="essay" class="essay" aria-labelledby="essay-title">
-        <figure class="essay-photo">
-          <img src="assets/profile-author.png" alt="민시완 프로필 사진">
-        </figure>
-        <div class="essay-copy">
-          <p class="section-kicker">작가의 말</p>
-          <h2 id="essay-title">문제의 원인을 구조적인 흐름에서 찾습니다</h2>
+      <section id="story" class="story">
+        <div class="story-copy">
+          <p class="section-label">Story</p>
+          <h2>성실함에서 시작해 운영 안정성으로 이어진 관점</h2>
           <p>
-            저는 문제의 원인을 단순 현상이 아닌 구조적인 흐름에서 찾으려고 하는 백엔드 개발자입니다.
-            기능 구현 자체보다 실제 운영 환경에서 얼마나 안정적으로 동작하는지, 장애가 발생했을 때 어떤 영향이
-            발생할 수 있는지를 항상 함께 고민하며 개발해왔습니다.
+            고교 시절부터 꾸준함, 책임감, 목표 의식, 경청하는 태도를 강점으로 평가받았습니다. 지금은 그 태도가
+            운영 환경에서 작은 이상 징후를 놓치지 않고, 문제의 원인을 끝까지 추적하며, 팀과 함께 더 나은 구조를
+            만드는 개발 방식으로 이어지고 있습니다.
           </p>
-          <p>
-            현재는 삼성카드 통합 금융 플랫폼 '모니모' 프로젝트에서 금융 및 제휴 서비스 서버 개발과 운영을 담당하고
-            있습니다. 금융 서비스 특성상 데이터 정합성과 안정성이 매우 중요하기 때문에, 단순 API 개발뿐 아니라
-            트랜잭션 처리, 대량 데이터 배치 구조, Redis 기반 캐시 아키텍처 개선, 제휴사 연동 구조 설계 등 운영 환경
-            중심의 개발 경험을 쌓아왔습니다. 특히 실제 서비스 운영 과정에서 발생한 DB 부하나 응답 지연 문제를 개선하기
-            위해 배치 처리 구조를 Chunk 기반으로 변경하거나, 마이데이터 API 호출 구조를 병렬 처리 방식으로 개선하여
-            응답 속도를 단축한 경험이 있습니다.
-          </p>
-          <p>
-            또한 최근에는 제휴 플랫폼 관련 업무를 수행하며 외부 제휴사 로그인 및 회원가입 연동, 인증 토큰 기반 보안
-            구조, 고객 데이터 전달 프로세스 등을 설계했습니다. 여러 제휴사가 함께 연결되는 구조이다 보니 단순 기능
-            개발보다 확장성과 운영 안정성을 함께 고려해야 했고, 이를 통해 시스템 전체 흐름을 바라보는 시야를 키울 수
-            있었습니다.
-          </p>
-          <p>
-            이전에는 광고 플랫폼 회사에서 대규모 트래픽 기반 광고 플랫폼 서버를 개발하며 Redis, EhCache 기반 캐시
-            구조와 배치 처리 시스템을 운영한 경험이 있습니다. 또 반도체 장비 회사에서는 C++, C# 기반 장비 제어 시스템
-            개발 업무를 담당하며 RS-232 기반 실시간 데이터 처리, 센서 데이터 수집, PID 제어 알고리즘 적용 등을
-            경험했습니다.
-          </p>
-          <p>
-            저는 장애가 발생했을 때 단순히 빠르게 처리하는 것보다 왜 문제가 발생했는지를 끝까지 분석하고, 같은 문제가
-            반복되지 않도록 구조적으로 개선하는 것을 중요하게 생각합니다. 앞으로도 안정성과 확장성을 함께 고려하며
-            실제 운영 환경에 강한 시스템을 설계할 수 있는 백엔드 개발자로 성장하고 싶습니다.
-          </p>
+          <button class="button ghost dark" type="button" data-open-record>고교생활기록부 보기</button>
+        </div>
+        <div class="education-card">
+          <h3>Education & Certification</h3>
+          <dl>
+            <div><dt>2017.09 - 2019.06</dt><dd>북경교통대학교 소프트웨어공학 학사</dd></div>
+            <div><dt>2017.03 - 2018.02</dt><dd>인덕대학교 메카트로닉스공학 학사</dd></div>
+            <div><dt>2012.03 - 2017.02</dt><dd>인덕대학 메카트로닉스 전문학사</dd></div>
+            <div><dt>Certification</dt><dd>정보처리기사</dd></div>
+          </dl>
         </div>
       </section>
     </main>
 
-    <div class="record-modal" role="dialog" aria-modal="true" aria-labelledby="record-modal-title" hidden>
-      <div class="record-backdrop" data-close-record></div>
-      <section class="record-dialog">
-        <header class="record-dialog-head">
-          <div>
-            <p class="section-kicker">원본 기록</p>
-            <h2 id="record-modal-title">고교생활기록부</h2>
-          </div>
-          <button class="record-close" type="button" aria-label="고교생활기록부 닫기" data-close-record>×</button>
+    <div class="image-modal" role="dialog" aria-modal="true" aria-labelledby="image-modal-title" hidden>
+      <div class="modal-backdrop" data-close-modal></div>
+      <section class="modal-dialog">
+        <header class="modal-head">
+          <h2 id="image-modal-title">Preview</h2>
+          <button class="modal-close" type="button" aria-label="닫기" data-close-modal>×</button>
         </header>
-        <div class="record-image-wrap">
+        <div class="modal-body">
+          <img src="" alt="">
+        </div>
+      </section>
+    </div>
+
+    <div class="record-modal" role="dialog" aria-modal="true" aria-labelledby="record-modal-title" hidden>
+      <div class="modal-backdrop" data-close-record></div>
+      <section class="modal-dialog">
+        <header class="modal-head">
+          <h2 id="record-modal-title">고교생활기록부</h2>
+          <button class="modal-close" type="button" aria-label="고교생활기록부 닫기" data-close-record>×</button>
+        </header>
+        <div class="modal-body">
           <img src="assets/school-record.jpg" alt="고교 생활기록부 행동특성 및 종합의견 이미지">
         </div>
       </section>
